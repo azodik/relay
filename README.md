@@ -20,7 +20,7 @@ curl -fsSL https://raw.githubusercontent.com/azodik/relay/main/.env.example -o .
 
 Edit `.env`:
 
-1. Set a strong `DB_PASSWORD`.
+1. Set a strong `DB_PASSWORD` and keep `DB_USERNAME=relay` (do not use `root`—MariaDB already has one).
 2. Generate and set `APP_KEY`:
 
    ```bash
@@ -33,6 +33,13 @@ Edit `.env`:
 Then:
 
 ```bash
+docker compose up -d
+```
+
+If MariaDB was ever started with the wrong `DB_USERNAME` (for example `root`) or a different `DB_PASSWORD`, reset the database volume before trying again:
+
+```bash
+docker compose down -v
 docker compose up -d
 ```
 
