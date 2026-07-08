@@ -82,7 +82,7 @@ importers:
         specifier: ^5.0.0
         version: 5.2.0(vite@8.1.3(@types/node@22.20.1)(esbuild@0.28.1)(jiti@2.7.0))
       concurrently:
-        specifier: ^9.0.1
+        specifier: ^9.2.3
         version: 9.2.3
       eslint:
         specifier: ^9.17.0
@@ -1308,6 +1308,7 @@ packages:
     resolution: {integrity: sha512-Dq1bqBdLaZ1Gb/l2e5/+o3B18+8TI9ANlA1SkejZqDgdU/jK/ThYaMPMJpVMMXy2uRHvGKbkz9vheVGdq3cJfA==}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-win32-x64-msvc@4.9.5':
     resolution: {integrity: sha512-1q+mykKE3Vot1kaFJIDoUFv5TuW+QQVaf2FmTT9krg86pQrGStOSJJ0Zil7CFagyxDuouTepzt5Y5TVzyajOdQ==}
