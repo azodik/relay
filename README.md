@@ -4,6 +4,8 @@
 
 Azodik Relay sits between your apps and SES: delivery logs, domain verification, API keys, webhooks, suppressions, and HTML/MIME previews—on infrastructure you control. Keep your existing AWS bill; add the dashboard and sending API SES does not ship with.
 
+> **Thanks to [Larasend](https://github.com/savvyagents/larasend)** — Azodik Relay is based on [savvyagents/larasend](https://github.com/savvyagents/larasend), the open-source self-hosted transactional email platform for Laravel on Amazon SES. We're grateful to the Larasend team for the foundation this project builds on.
+
 - **Dashboard** — activity, sent mail, bounces, complaints, suppressions, identities, templates, webhooks, API keys
 - **HTTP API** — send and inspect mail with scoped, hashed API keys
 - **Laravel package** — `MAIL_MAILER=relay` or `Relay::emails()->send([...])`
@@ -178,6 +180,10 @@ The Laravel mail transport package lives in `packages/relay-laravel` and is path
 Relay stores email content, delivery metadata, and (optionally) AWS credentials on your hosts. Report vulnerabilities privately—see [SECURITY.md](SECURITY.md).
 
 Compliance note: self-hosting does not by itself make a deployment HIPAA- or otherwise certified; you remain responsible for BAAs, hardening, and access controls.
+
+## Acknowledgments
+
+Azodik Relay is derived from [Larasend](https://github.com/savvyagents/larasend) by [Savvy Agents](https://github.com/savvyagents). Larasend is MIT-licensed open source; see the [Larasend repository](https://github.com/savvyagents/larasend) for the original project.
 
 ## License
 
