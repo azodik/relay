@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none" role="img" aria-label="Azodik Relay">
+  <defs>
+    <linearGradient id="relayBg" x1="64" y1="48" x2="448" y2="464" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5FF5CE"/>
+      <stop offset="0.55" stop-color="#12D6B1"/>
+      <stop offset="1" stop-color="#0F766E"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#relayBg)"/>
+  <!-- Geometric capital R -->
+  <path
+    fill="#062019"
+    d="M148 120h168c74 0 122 40 122 104 0 48-26 84-72 98l88 90H348l-80-82h-48v82H148V120Zm72 58v108h88c36 0 58-20 58-54s-22-54-58-54H220Z"
+  />
+  <path
+    fill="#F7FFFC"
+    d="M156 128h160c68 0 114 38 114 98 0 46-24 80-68 93l86 88H352l-78-80h-46v80H156V128Zm68 54v100h84c34 0 54-18 54-50s-20-50-54-50h-84Z"
+  />
+</svg>

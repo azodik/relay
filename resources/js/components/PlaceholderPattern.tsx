@@ -1,0 +1,32 @@
+import { useId } from 'react';
+
+export default function PlaceholderPattern() {
+    const id = useId();
+    const patternId = `pattern-${id}`;
+
+    return (
+        <svg
+            className="absolute inset-0 size-full stroke-neutral-900/20 dark:stroke-neutral-100/20"
+            fill="none"
+        >
+            <defs>
+                <pattern
+                    id={patternId}
+                    x="0"
+                    y="0"
+                    width="8"
+                    height="8"
+                    patternUnits="userSpaceOnUse"
+                >
+                    <path d="M-1 5L5 -1M3 9L8.5 3.5" strokeWidth="0.5" />
+                </pattern>
+            </defs>
+            <rect
+                stroke="none"
+                fill={`url(#${patternId})`}
+                width="100%"
+                height="100%"
+            />
+        </svg>
+    );
+}

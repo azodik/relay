@@ -1,0 +1,35 @@
+{
+    "name": "azodik/relay",
+    "description": "Laravel mail transport and API client for Azodik Relay.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "relay",
+        "azodik",
+        "laravel",
+        "mail",
+        "ses"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Azodik\\Relay\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Azodik\\Relay\\RelayServiceProvider"
+            ],
+            "aliases": {
+                "Relay": "Azodik\\Relay\\Facades\\Relay"
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": ">=10.0",
+        "illuminate/http": ">=10.0",
+        "illuminate/mail": ">=10.0"
+    }
+}
